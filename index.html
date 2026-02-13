@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circo Mágico - ¡Compra tus Entradas!</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>🎪 GRAN CIRCO ESTELAR 🤡</h1>
+        <p>¡La magia en la palma de tu mano!</p>
+    </header>
+
+    <main class="container">
+        <section class="ticket-card">
+            <h2>Reserva tu lugar</h2>
+            <form id="ticket-form">
+                <label for="fecha">Selecciona el día:</label>
+                <input type="date" id="fecha" required>
+
+                <label for="funcion">Función:</label>
+                <select id="funcion" required>
+                    </select>
+
+                <label for="categoria">Ubicación:</label>
+                <select id="categoria" required>
+                    <option value="general">General ($10)</option>
+                    <option value="preferencial">Preferencial ($20)</option>
+                    <option value="vip">VIP ($35)</option>
+                </select>
+
+                <label for="cantidad">Cantidad de tickets:</label>
+                <input type="number" id="cantidad" min="1" max="10" value="1">
+
+                <div class="total-display">
+                    Total: <span id="total-price">$0</span>
+                </div>
+
+                <button type="submit" class="btn-buy">¡COMPRAR AHORA!</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
